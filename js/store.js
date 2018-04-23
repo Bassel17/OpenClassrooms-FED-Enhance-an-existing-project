@@ -108,13 +108,16 @@
     } else {
       // ### START EDIT
       // - Assign an ID
+      // - Id can be generated in a safer (unique) manner ny using new Date().getTime()
+      //   which returns miliseconds passed since Jan 1, 1970.
 
-      // TODO: Can this be generated in a safer (unique) manner? Timestamp? Sequentially or auto increase somehow?
-      var newId = '';
-      var charset = '0123456789';
-      for (var i = 0; i < 6; i++) {
-        newId += charset.charAt(Math.floor(Math.random() * charset.length));
-      }
+      // var newId = '';
+      // var charset = '0123456789';
+      // for (var i = 0; i < 6; i++) {
+      //   newId += charset.charAt(Math.floor(Math.random() * charset.length));
+      // }
+
+      var newId = new Date().getTime();
 
       // ### END EDIT
 

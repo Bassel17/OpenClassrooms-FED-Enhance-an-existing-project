@@ -122,7 +122,7 @@
     var self = this;
 
     // ### START EDIT
-    // - Use trim() instead of while loops for removing whitespace
+    // - Use native trim() instead of while loops for trimming whitespace
 
     // while (title[0] === ' ') {
     //   title = title.slice(1);

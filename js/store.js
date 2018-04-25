@@ -84,11 +84,11 @@
     // - Only generate an ID if needed - moved into else block below.
 
     // Generate an ID
-    var newId = '';
-    var charset = '0123456789';
-    for (var i = 0; i < 6; i++) {
-      newId += charset.charAt(Math.floor(Math.random() * charset.length));
-    }
+    // var newId = '';
+    // var charset = '0123456789';
+    // for (var i = 0; i < 6; i++) {
+    //   newId += charset.charAt(Math.floor(Math.random() * charset.length));
+    // }
 
     // ### END EDIT
 

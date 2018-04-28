@@ -126,6 +126,7 @@
 
       localStorage[this._dbName] = JSON.stringify(data);
       callback.call(this, [updateData]);
+
     }
 
   };
@@ -142,32 +143,28 @@
 
     // ### START EDIT
     // - Redundant var
-
     // var todoId;
-
     // ### END EDIT
 
     for (var i = 0; i < todos.length; i++) {
       if (todos[i].id == id) {
+
         // ### START EDIT
         // - Redundant var
-
         // todoId = todos[i].id;
-
         // ### END EDIT
+
         todos.splice(i, 1);
       }
     }
 
     // ### START EDIT
     // - Redundant after moving splice to above for loop
-
     // for (var i = 0; i < todos.length; i++) {
     //   if (todos[i].id == todoId) {
     //     todos.splice(i, 1);
     //   }
     // }
-
     // ### END EDIT
 
     localStorage[this._dbName] = JSON.stringify(data);
